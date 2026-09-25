@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner daxilet = new Scanner(System.in);
+
+        System.out.print("Birinci ededi daxil et: ");
+        int eded1 = daxilet.nextInt();
+
+        System.out.print("Ikinci ededi daxil et: ");
+        int eded2 = daxilet.nextInt();
+
+        System.out.println("Sum: " + (eded1 + eded2));
+        System.out.println("Multiplication: " + (eded1 * eded2));
+
+        if (eded1 > eded2 && eded2 != 0) {
+            System.out.println("Integer division: " + (eded1 / eded2));
+            System.out.println("Remainder: " + (eded1 % eded2));
+            System.out.println("Subtraction: " + (eded1 - eded2));
+        }
+        else if (eded2 > eded1 && eded1 != 0) {
+            System.out.println("Integer division: " + (eded2 / eded1));
+            System.out.println("Remainder: " + (eded2 % eded1));
+            System.out.println("Subtraction: " + (eded2 - eded1));
+        }
+
+    }
+}
